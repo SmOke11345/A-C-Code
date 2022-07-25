@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Spectral:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Spectral', serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+    font-size: 28px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+h2 {
+    color: #B39D79;
+    font-size: 16px;
+    line-height: 1.2em;
+    font-weight: 400;
+}
+h3 {
+    font-size: 10px;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.4em;
+}
+
+a {
+    text-decoration: none;
+    color: #B39D79;
+}
+
+
+/* header */
+#header {
+    margin: 0 auto; 
+    width: 100%; 
+    padding: 30px 40px;
+    border-bottom: 2px solid #D9D9D9;
+    position: fixed;
+    width: 100%;    
+    background-color: #fff;
+    z-index: 1000;
+    opacity: .9;
+}
+
+#header a {
+    color: #000;
+}
+
+.container {
+    width: 472px;
+    margin: 0 auto; 
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.logo-products {
+    display: flex;
+    align-items: center;
+}
+
+.separator {
+    margin: 0 32px;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 290px;
+}
+
+.devices {
+    margin-right: 20px;
+}
+
+.downlist {
+    padding: 12px 14px;
+    border: 1px solid #B39D79;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.downlist.active {
+    border-radius: 10px 10px 0px 0px;
+}
+
+span .arrow {
+    padding-left: 32px;
+}
+.arrow.active {
+    transform: rotate(180deg);
+    padding: 0px 32px 0px 0px;
+}
+
+.drop-down {
+    display: none;
+}
+.drop-down.active {
+    display: block;
+    height: auto;
+    z-index: 19;
+    position: absolute;
+    border: 1px solid #B39D79;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #B39D79;
+    width: 100%;
+    max-width: 131px;
+    margin-top: 12px;
+}
+.drop-down.active li {
+    padding: 13px 0px 15px 13px;
+}
+li {
+    list-style: none;
+    
+}
+
+.telephone-basket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.telephone-basket > .separator{
+    margin: 0 16px;
+}
+
+.telephone-basket > a img {
+    display: flex;
+}
+
+.number-products {
+    color: #B39D79;
+}
+
+.cart {
+    display: none;
+}
+
+/*  main-screen  */
+
+#main-screen {
+    padding-top: 12%;
+}
+
+.main {
+    font-size: 10px;
+    display: flex;
+    align-items: baseline;
+}
+
+.separator-2 {
+    margin: 0 7px;
+}
+
+.title {
+    line-height: 1.8em;
+}
+
+.text {
+    padding-top: 20px;
+}
+
+.separator-3 {
+    width: 24px;
+    margin-top: 35px;
+}
+
+.separator-3.in-768px {
+    display: none;
+}
+
+.container-curator {
+    max-width: 424px;
+    margin: 0 auto;
+}
+
+.main-title {
+    padding: 35px 0px 13px 0px;
+}
+
+.wrapper-curator {
+    display: flex;
+    font-size: 12px;
+    height: 320px;
+}
+
+.img-curator {
+    max-width: 228px;
+    width: 100%;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    margin-right: 16px;
+}
+
+.biography {
+    padding-top: 15px;
+}
+
+.occupation {
+    font-size: 12px;
+    max-width: 180px;
+    margin-top: 10px;
+}
+
+.fullname {
+    font-size: 16px;
+}
+
+.separator-4 {
+    width: 16px;
+    margin: 12px 0px 12px 0px;
+}
+
+.job-title {
+    max-width: 137px;
+}
+
+.link-telegram {
+    margin-top: 10px;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 10px;
+    border-bottom: 1px solid #B39D79;
+    width: 57px;
+}
+.link-telegram h3 {
+    font-weight: 400;
+}
+.telegram {
+    display: contents;
+}
+.telegram img {
+    margin-left: 6px;
+}
+
+.img-curators-carousel {
+    width: 100%;
+    height: 160px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.title-curator-owl {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.separator-5 {
+    margin: 47px 0px 92px 0px;
+}
+
+/* professional-procedures */
+
+.professional-procedures {
+    text-align: center;
+}
+
+.title-video h2 {
+    color: #000;
+}
+
+.subtitle {
+    margin-top: 7px;
+}
+
+.subtitle > p.main {
+    width: 321px;
+    margin: auto;
+}
+
+.video-youtube {
+    margin: 20px 0px 32px 0px;
+}
+
+.video {
+    width: 100%;
+    height: 240px;
+    border: 1px solid #B39D79;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    padding: 20px 0px 20px 16px;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.card.open {
+    margin-bottom: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+.text-on-cards.open {
+    margin-bottom: 16px;
+    display: block;
+    transition: all 2s ease;
+}
+
+.number {
+    color: #B39D79;
+}
+
+.title-products {
+    margin-left: 12px;
+    width: 320px;
+}
+.title-products h2 {
+    color: #000;
+}
+
+.link-products h3 {
+    color: #B39D79;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.arrow-right {
+    border-left: 2px solid white;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-products {
+    padding: 23px 16px; 
+    cursor: pointer;
+}
+.arrow-products.open {
+    transform: rotate(90deg);
+    transition: 1s ease-in-out;
+}
+
+.text-on-cards {
+    width: 100%;
+    background-color: #D9D9D9;
+    padding: 20px 30px;
+    display: none;
+}
+
+.download {
+    margin: 23px 0px 120px 0px;
+}
+.download .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download h2 {
+    color: #000;
+}
+
+.circle {
+    margin-left: 10px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.download h2 span {
+    border-bottom: 1px solid #B39D79;
+}
+
+/* Footer */
+.title-footer {
+    display: none;
+}
+.grid  {
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: repeat(4, 106px);
+}
+
+.square {
+    height: 96px;
+}
+
+#footer {
+    text-align: center;
+}
+
+#footer .separator-4 {
+    margin: 32px 50% 12px 48%;
+}
+
+.footer-text {
+    width: 180px;
+    margin: 0 auto;
+}
+.footer-text h3 {
+    font-size: 12px;
+    line-height: normal;
+}
+
+.footer-text a {
+    color: #000;
+}
+
+.footer-text.links {
+    width: 140px;
+}
+
+.footer-text.documents p {
+    font-size: 12px;
+}
+.footer-text.documents {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 0px 21px 0px;
+}
+
+.dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #B39D79;
+}
+@media screen and (max-width: 1100px) {
+    /* header */
+    #header {
+        padding: 20px 16px;
+    }
+    .downlist {
+        padding: 10px;
+    }
+    span .arrow {
+        padding-left: 20px;
+    }
+    .drop-down.active {
+        width: 123px;
+        margin-top: 10px;
+    }
+    .drop-down.active li {
+        padding: 10px;
+    }
+    .separator, .devices, .cosmetics,.icon-d-none, .d-none, .telephone {
+        display: none;
+    }
+    .cart {
+        display: block;
+    }
+    .logo {
+        width: 176px;
+    }
+    .products {
+        width: auto;
+    }
+    .telephone-basket {
+        width: 180px;
+    }
+}
+@media screen and (max-width:768px) {
+    .container{
+        width: 320px;
+    }
+    body, h2, .fullname p, .text p,.title-curator-owl p  {
+        font-size: 12px;  
+    }
+    h1 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 9px;
+    }
+    /* header */
+    .drop-down.active {
+        width: 109px;
+    }
+    /* main-screen */
+    .text {
+        padding-top: 6px;
+    }
+    h3, p.main {
+        font-size: 8px;
+    }
+    .separator-3.in-768px{
+        display: block;
+        width: auto;
+    }
+    .separator-3 {
+        display: none;
+    }
+    /* куратор */
+    .wrapper-curator {
+        height: auto;
+    }
+    .img-curator { 
+        width: 96px;
+        height: 144px;
+    }
+    .link-telegram {
+        width: 47px;
+    }
+    /* Карусель экпертов */
+    .title-curator-owl p {
+        width: 93px;
+    }
+    .separator-5 {
+        margin-bottom: 45px;
+    }
+    /* professional-procedures */
+    .subtitle {
+        text-align: left;
+        margin-top: 22px;
+    }
+    .subtitle p.main {
+        width: 240px;
+        margin: 0;
+    }
+    .video {
+        height: 160px;
+    } 
+    .link-products h3 {
+        font-size: 9px;
+    }
+    .title-products {
+        width: auto;
+    }
+    .download {
+        margin-bottom: 93px;
+    }
+    /* footer */
+    .grid {
+        grid-template-columns: repeat(3, 96px);
+    }
+    .square {
+        height: 84px;
+    }
+    .d-none-img {
+        display: none;
+    }
+    #footer .separator-4 {
+        margin-top: 23px;
+    }
+}
+@media screen and (max-width: 520px) {
+    /* header */
+
+    /* main-screen */
+    #main-screen {
+        padding-top: 24%;
+    }
+    /* foooter */
+    .title-footer {
+        display: block;
+    }
+    .title-inst h1 {
+        font-size: 14px;
+    }
+    .e-mail-inst h1 {
+        font-size: 24px;
+    }
+    .grid {
+        margin-top: 20px;
+    }
+    .footer-text {
+        width: 205px;
+    }
+    .footer-text h3 {
+        font-size: 14px;   
+    }
+    .footer-text.links {
+        width: 160px;
+    }
+    #footer .separator-4 {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .container {
+        width: 290px;
+    }
+    /* header */
+    .logo {
+        width: 120px;
+    }
+    .telephone-basket {
+        width: 150px;
+    }
+    .list {
+        font-size: 10px;
+    }
+    .downlist {
+        padding: 7px;
+    }
+    .drop-down.active {
+        width: 96px;
+        margin-top: 8px
+    }
+    .drop-down.active li{
+        padding: 6px;
+    }
+    /* main-screen */
+    /* куратор */
+    .container.adaptive {
+        width: 244px;
+    }
+    .img-curator {
+        width: 100px;
+    }
+    .biography {
+        padding-top: 0;
+    }
+    .occupation {
+        max-width: 120px;
+    }
+    .job-title {
+        margin-top: 5px;
+    }
+    /* Карусель экпертов */
+    .img-curators-carousel {
+        height: 96px;
+        border-radius: 5px;
+    }
+    .title-curator-owl p {
+        width: auto;
+    }
+    /* professional-procedures */
+    .arrow-right {
+        margin-left: 2px;
+    }
+    /* footer */
+    .grid {
+        grid-template-columns: repeat(3, 86px);
+    }
+}
